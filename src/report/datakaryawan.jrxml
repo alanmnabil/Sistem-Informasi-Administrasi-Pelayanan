@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e8cd5897-a683-4625-8196-40b41ad1fe93">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM pegawai]]>
+	</queryString>
+	<field name="id_pegawai" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenkel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="notelp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jabatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="104" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="2" width="208" height="34" uuid="05476484-c466-4d23-9137-913d3a2642ae"/>
+				<imageExpression><![CDATA["D:\\Al-an\\sistemadm\\src\\report\\logo wudonet.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="6" y="35" width="198" height="42" uuid="c5f6a728-261b-4c40-8878-db10b69b3e5b"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<text><![CDATA[Mega Regency Blok F30 No. 37,Sukaragam Kec. Serang Baru, Kab. Bekasi, Jawa Barat 17330, Indonesia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="76" width="91" height="28" uuid="0d0cb121-74be-4289-8bb4-863a8c83464f"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[0877-4179-6777 wudonet.business.site]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="208" y="15" width="134" height="20" uuid="2dd8f1f9-3ca4-419e-990f-5b6b5f305cc9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA KARYAWAN]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="20" y="41" width="100" height="20" uuid="abd6a959-3d02-4501-9172-b0c31de66fa7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="119" y="41" width="118" height="20" uuid="f1d68a58-7e0f-4589-b2d2-54472a880b1f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="237" y="41" width="100" height="20" uuid="618d7fe2-c026-4426-9da3-1a5c365426a1"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="337" y="41" width="100" height="20" uuid="82edf148-633f-4089-b208-ed7f2cafd70a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="437" y="41" width="100" height="20" uuid="e43a7549-b7cc-4cc8-97e5-fc3b1d18c677"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="41" width="100" height="20" uuid="905bf2e1-c05f-467e-aa2f-9dbe815d312c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="119" y="41" width="118" height="20" uuid="73d776da-0d31-40ca-b8fe-d6035a0ab2b9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="41" width="100" height="20" uuid="c9929340-4896-4b1a-acec-ae89cee62ee4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="337" y="41" width="100" height="20" uuid="bac0483f-7026-4959-8b0d-1d8a310ceb5d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="437" y="41" width="100" height="20" uuid="6ebef102-ee32-4c3b-aa01-c6eeb74780c3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jabatan]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="439" y="25" width="99" height="16" uuid="7668c34c-2ab5-4d7e-993e-5325bd07d9c2"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="20" y="0" width="99" height="20" uuid="28d6f5ed-1a2f-4ab0-a78c-af82dc6bd6dd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="119" y="0" width="118" height="20" uuid="6c411f3f-f492-4c94-824c-d4bd05780a16"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="237" y="0" width="100" height="20" uuid="b1e39fa5-2bb6-4e04-8da4-3e349ee0fc1b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="337" y="0" width="100" height="20" uuid="d60a34af-f32c-4e31-a86f-c225c27a1e22"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="437" y="0" width="100" height="20" uuid="f236c4e8-4730-4275-9e43-603bcff2ce56"/>
+			</rectangle>
+			<textField>
+				<reportElement x="20" y="0" width="100" height="20" uuid="c58a4698-8327-4db2-b69b-4aab15cbb7a3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_pegawai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="119" y="0" width="118" height="20" uuid="44d2f121-12bb-46df-8e4b-634f6c7ab2f6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="0" width="100" height="20" uuid="c21e6f1c-0bf8-4855-abf0-0f2e0f888ee1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jenkel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="0" width="100" height="20" uuid="5d6e1f80-e486-4927-8db5-9774f1ef57cd"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{notelp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="437" y="0" width="100" height="20" uuid="fe2bed81-ba60-4dd8-a64d-de1eaa8b3dc8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jabatan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="94" splitType="Stretch">
+			<staticText>
+				<reportElement x="408" y="0" width="31" height="16" uuid="94d08cf9-1667-4a0a-9d61-ae22dc7c6e70"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Bekasi,]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="439" y="0" width="98" height="16" uuid="f4f7ba5a-dd17-4440-92e3-f9c06369655c"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="426" y="16" width="38" height="16" uuid="0adc8c5d-bcd3-4e4d-9bd8-121e76fb3ccb"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Manager]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="78" width="60" height="16" uuid="e4977226-6a0b-4907-befc-0720b151b6af"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Andi Susanto]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="171" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
